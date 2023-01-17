@@ -64,6 +64,3 @@ export {
   fetchMovieReviews,
   fetchSearchingMovies,
 };
-
-//  "homepage": "https://anatoliyshulika.github.io/goit-react-hw-05-movies/",
-//  "name": "goit-react-hw-05-movies",
