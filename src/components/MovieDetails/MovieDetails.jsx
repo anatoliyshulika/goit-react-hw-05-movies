@@ -42,7 +42,7 @@ export default function MovieDetails() {
       return;
     }
     setGoBack(location.state.from);
-  }, []);
+  }, [location.state]);
 
   if (!movie.title) {
     return;
