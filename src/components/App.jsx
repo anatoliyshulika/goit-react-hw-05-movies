@@ -7,10 +7,24 @@ import MovieDetails from './MovieDetails/MovieDetails';
 import NotFound from 'pages/NotFound/NotFound';
 import Cast from './Cast/Cast';
 import Revievs from './Revievs/Revievs';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const App = () => {
   return (
-    <Container>
+    <>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -22,6 +36,7 @@ export const App = () => {
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </Container>
+      <ToastContainer />
+    </>
   );
 };

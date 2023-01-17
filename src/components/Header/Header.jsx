@@ -1,12 +1,14 @@
-import { NavLink } from 'react-router-dom';
+import { Section, HeaderSt, Nav, NavLinkSt } from './Header.styled';
 
 export default function Header() {
   return (
-    <div>
-      <nav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="movies">Movies</NavLink>
-      </nav>
-    </div>
+    <Section>
+      <HeaderSt>
+        <Nav>
+          <NavLinkSt to="/">Home</NavLinkSt>
+          <NavLinkSt to="movies">Movies</NavLinkSt>
+        </Nav>
+      </HeaderSt>
+    </Section>
   );
 }
